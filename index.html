@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+  <!-- tailwind  -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Codex - Your AI</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="heading">
+    <nav class="flex flex-row justify-between text-black">
+      <div class="text-2xl font-extrabold m-2 mx-10">
+        <h1 class="font-popins">Farmer friendly Chat-bot </h1>
+      </div>
+      <button class="border-2 rounded-[5px] font-bold px-2 py-1 m-2 mx-10 btns"><a href="#">Chatbot</a></button>
+    </nav>
+  </div>
+  <div class="ani">
+    <div class="animate">
+      <div class="headd">
+        <h3>Hello it's me</h3>
+        <h1>farmers friend</h1>
+        <h3>we help farmerrs</h3>
+        <p><span id="elementt"></span><br> we are u agri ai that help farmers by solving their queries
+          and giving solutions to thier problems.</p>
+      </div>
+      <div class="box">
+        <div class="imgdiv">
+          <img src="./images/far.png" alt="" class="myimg">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="app" class="maindiv">
+    <div id="chat_container"></div>
+    <form>
+      <textarea name="prompt" rows="1" cols="1" placeholder="Ask codex..."></textarea>
+      <button type="submit"><img src="assets/send.svg" alt="send" />
+    </form>
+  </div>
+
+  <script type="module" src="script.js"></script>
+</body>
+
+</html>
